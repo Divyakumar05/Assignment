@@ -1,0 +1,22 @@
+package string;
+
+import java.util.Scanner;
+
+public class substring {
+	public static void main(String[] args) {
+		String sentence,letter;
+		int pos;
+		Scanner sc_input=new Scanner(System.in);
+		System.out.println("Enter a sentence:");
+		sentence=sc_input.nextLine();
+		System.out.println("Enter a letter:");
+		letter=sc_input.nextLine();
+		pos=sentence.indexOf(letter);
+		if(pos>-1){
+			System.out.println("Result: "+sentence.substring(pos+1));
+		}
+		else{
+			System.out.println("The letter does not exist in the sentence");
+		}
+	}
+}
